@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>BMI Calc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div>
+            <button id="US_Units" class="units">US Units</button>
+            <button id="Metric_Units" class="units">Metric Units</button>
+        </div>
+        <div class="box">
+            <p>Age:</p>
+            <input type="number" required id="age" min="2" max="100">
+            <br>
+            <p>Gender:</p>
+            <input type="radio" name="gender" id="gender1" value="Male">
+            <p>Male</p>
+            <input type="radio" name="gender" id="gender2" value="Female">
+            <p>Female</p>
+            <br>
+            <p>Height:</p>
+            <input type="number" placeholder="feet" id="input1" min="1">
+            <input type="number" placeholder="inches" id="input2" min="0">
+            <br>
+            <p>Weight:</p>
+            <input type="number" id="weight" placeholder="pounds" min="1">
+            <br>
+            <button id="calculate">Calculate</button>
+            <div id="result">Result: </div>
+        </div>
+    </div>
+</body>
+</html>
