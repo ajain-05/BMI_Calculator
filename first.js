@@ -20,7 +20,7 @@ calculate.addEventListener("click",()=>{
 
     let result; 
 
-    if(ipt1.placeholder==="cm"){
+    if (ipt2.style.display === "none") { 
         result =  num3/((num1*num1)/(100*100));
     }
     else{
