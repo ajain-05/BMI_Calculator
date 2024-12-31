@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #2d4059;
+    font-size: 2.5vw;
+    text-decoration-line: overline underline;
+    text-decoration-style:double;
+}
+.container{
+    border-radius: 2vw;
+    background-color: #ffffff;
+    padding: 2vw;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.units{
+    color: #ffffff;
+    width: 7vw;
+    margin: 1vw;
+    height: 2.5vw;
+    border-radius: 0.5rem;
+    font-size: 1vw;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    transition: background 0.3s ease;
+}
+.units:hover {
+    background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+#US_Uits{
+    margin-left: 0;
+}
+p{
+    color: #4a4a4a;
+    display: inline-block;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+input{
+    color: #2d4059;
+    border: 2px solid #5b86e5;
+    padding: 0.5vw;
+    font-size: 1vw;
+    border-radius: 0.5rem;
+    margin-left: 1vw;
+    background-color: #f8f9fa;
+}
+#age,#input1,#input2,#weight{
+    width: 5vw;
+}
+input[type="radio"]{
+    transform: scale(1.5);
+    margin: 0.5vw;
+    accent-color: #5b86e5; 
+}
+.units{
+    padding: 0.3rem;
+}
+#calculate{
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    margin-top: 2vw;
+    margin-left: 6vw;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#calculate:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+#result{
+    font-size: 2vw;
+    margin-top: 1vw;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+@media(max-width:768px){
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: #2d4059;
+        font-size: 2.5vw;
+        text-decoration-line: overline underline;
+        text-decoration-style:double;
+    }
+    .container{
+        border-radius: 2vw;
+        background-color: #ffffff;
+        padding: 2vw;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .units{
+        color: #ffffff;
+        width: 7vw;
+        margin: 1vw;
+        height: 2.5vw;
+        border-radius: 0.5rem;
+        font-size: 1vw;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        background: linear-gradient(to right, #36d1dc, #5b86e5);
+        transition: background 0.3s ease;
+    }
+    .units:hover {
+        background: linear-gradient(to right, #5b86e5, #36d1dc);
+    }
+    #US_Uits{
+        margin-left: 0;
+    }
+    p{
+        color: #4a4a4a;
+        display: inline-block;
+        margin-top: 1vw;
+        font-size: 1.5vw;
+    }
+    input{
+        color: #2d4059;
+        border: 2px solid #5b86e5;
+        padding: 0.5vw;
+        font-size: 1vw;
+        border-radius: 0.5rem;
+        margin-left: 1vw;
+        background-color: #f8f9fa;
+    }
+    #age,#input1,#input2,#weight{
+        width: 5vw;
+    }
+    input[type="radio"]{
+        transform: scale(1.5);
+        margin: 0.5vw;
+        accent-color: #5b86e5; 
+    }
+    .units{
+        padding: 0.3rem;
+    }
+    #calculate{
+        padding: 0.5vw;
+        border-radius: 0.5vw;
+        margin-top: 2vw;
+        margin-left: 6vw;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    #calculate:hover {
+        background: linear-gradient(to right, #0072ff, #00c6ff);
+    }
+    #result{
+        font-size: 2vw;
+        margin-top: 1vw;
+        font-weight: bold;
+        color: #4caf50;
+    }
+}
+
+
+
+@media(max-width:360px){
+    h1{
+        font-size: 8vw;
+        text-align: center;
+    }
+    .container{
+        border-radius: 2vw;
+        padding: 2.5vw;
+    }
+    .units{
+        margin-top: 5vw;
+        width: 30vw;
+        height: 10vw;
+        border-radius: 0.5rem;
+        font-size: 5vw;
+    }
+    #US_Units{
+        margin-left: 0;
+    }
+    p{
+        margin-top: 5vw;
+        font-size: 5.5vw;
+    }
+    input{
+        border: 2px solid #5b86e5;
+        padding: 2.5vw;
+        font-size: 4vw;
+        border-radius: 0.5rem;
+        margin-left: 1vw;
+    }
+    #age,#input1,#input2,#weight{
+        width: 25vw;
+    }
+    input[type="radio"]{
+        transform: scale(1.2);
+        margin: 0.5vw;
+    }
+    .units{
+        padding: 0.3rem;
+    }
+    #calculate{
+        font-size: 5vw;
+        padding: 1.5vw;
+        border-radius: 1vw;
+        margin-top: 10vw;
+        margin-left: 23vw;
+    }
+    #result{
+        font-size: 8vw;
+        margin-top: 10vw;
+    }
+}
