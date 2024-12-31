@@ -9,11 +9,11 @@ body{
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    background: #FFB6B9;
 }
 h1{
     font-family: 'Courier New', Courier, monospace;
-    color: #2d4059;
+    color: #003366;
     font-size: 2.5vw;
     text-align: center;
     text-decoration-line: overline underline;
@@ -21,43 +21,42 @@ h1{
 }
 .container{
     border-radius: 2vw;
-    background-color: #ffffff;
+    background-color: #FFDDC1;
     padding: 2vw;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 .units{
-    color: #ffffff;
     width: 7vw;
     margin: 1vw;
     height: 2.5vw;
     border-radius: 0.5rem;
     font-size: 1vw;
-    border: 2px solid #5b86e5;
+    border: 2px solid #FF7F50;
     color: #ffffff;
     cursor: pointer;
-    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    background: #FF7F50;
     transition: background 0.3s ease;
 }
 .units:hover {
-    background: linear-gradient(to right, #5b86e5, #36d1dc);
+    background: #FF6347 ;
 }
 #US_Units{
     margin-left: 0;
 }
 p{
-    color: #4a4a4a;
+    color:  #4F4A47;
     display: inline-block;
     margin-top: 1vw;
     font-size: 1.5vw;
 }
 input{
-    color: #2d4059;
-    border: 2px solid #5b86e5;
+    color: #003366;
+    border: 2px solid #FFEB99;
     padding: 0.5vw;
     font-size: 1vw;
     border-radius: 0.5rem;
     margin-left: 1vw;
-    background-color: #f8f9fa;
+    background-color: #D1E8E2;
 }
 #age,#input1,#input2,#weight{
     width: 5vw;
@@ -65,7 +64,7 @@ input{
 input[type="radio"]{
     transform: scale(1.5);
     margin: 0.5vw;
-    accent-color: #5b86e5; 
+    accent-color: #40E0D0; 
 }
 .units{
     padding: 0.3rem;
@@ -75,7 +74,7 @@ input[type="radio"]{
     border-radius: 0.5vw;
     margin-top: 2vw;
     margin-left: 6vw;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
+    background: #40E0D0;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -83,14 +82,15 @@ input[type="radio"]{
     font-size: 1.5vw;
 }
 #calculate:hover {
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: #30B0A1;
 }
 #result{
     font-size: 2vw;
     margin-top: 1vw;
     font-weight: bold;
-    color: #4caf50;
+    color: #4CAF50;
 }
+
 
 @media(max-width:950px){
     h1{
