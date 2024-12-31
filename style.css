@@ -145,7 +145,7 @@ input[type="radio"]{
     }
 }
 
-@media(max-width:768px){
+@media(max-width:850px){
     h1{
         font-size: 4vw;
     }
@@ -312,7 +312,7 @@ input[type="radio"]{
         width: 32vw;
         height: 12vw;
         border-radius: 0.5rem;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     #US_Units{
         margin-left: 0;
