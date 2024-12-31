@@ -192,7 +192,7 @@ input[type="radio"]{
     }
 }
 
-@media(max-width:450px){
+@media(max-width:360px){
     h1{
         font-size: 8vw;
         text-align: center;
