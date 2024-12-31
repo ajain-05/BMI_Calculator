@@ -92,7 +92,7 @@ input[type="radio"]{
 }
 
 
-@media(max-width:950px){
+@media(max-width:768px){
     h1{
         font-size: 8vw;
         text-align: center;
@@ -245,7 +245,7 @@ input[type="radio"]{
     }
 }
 
-@media(max-width:360px){
+@media (max-width:352px){
     h1{
         font-size: 8vw;
         text-align: center;
@@ -259,7 +259,7 @@ input[type="radio"]{
         width: 30vw;
         height: 10vw;
         border-radius: 0.5rem;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     #US_Units{
         margin-left: 0;
@@ -279,14 +279,67 @@ input[type="radio"]{
         width: 25vw;
     }
     input[type="radio"]{
-        transform: scale(1.2);
+        transform: scale(1);
         margin: 0.5vw;
     }
     .units{
         padding: 0.3rem;
     }
     #calculate{
+        font-size: 5vw;
+        padding: 1.5vw;
+        border-radius: 1vw;
+        margin-top: 10vw;
+        margin-left: 23vw;
+    }
+    #result{
+        font-size: 8vw;
+        margin-top: 10vw;
+    }
+}
+
+@media (max-width:144px){
+    h1{
+        font-size: 8vw;
+        text-align: center;
+    }
+    .container{
+        border-radius: 2vw;
+        padding: 2.5vw;
+    }
+    .units{
+        margin-top: 5vw;
+        width: 32vw;
+        height: 12vw;
+        border-radius: 0.5rem;
         font-size: 4vw;
+    }
+    #US_Units{
+        margin-left: 0;
+    }
+    p{
+        margin-top: 5vw;
+        font-size: 5.5vw;
+    }
+    input{
+        border: 2px solid #5b86e5;
+        padding: 2.5vw;
+        font-size: 4vw;
+        border-radius: 0.5rem;
+        margin-left: 1vw;
+    }
+    #age,#input1,#input2,#weight{
+        width: 25vw;
+    }
+    input[type="radio"]{
+        transform: scale(0.5);
+        margin-top: 2vw;
+    }
+    .units{
+        padding: 0.3rem;
+    }
+    #calculate{
+        font-size: 5vw;
         padding: 1.5vw;
         border-radius: 1vw;
         margin-top: 10vw;
