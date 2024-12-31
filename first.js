@@ -14,14 +14,15 @@ calculate.addEventListener("click",()=>{
     const ipt3 = document.getElementById("weight")
     const num3 = Number(ipt3.value); // lbs
 
-    if(!(gender[0].checked || gender[1].checked)||ipt1.value === ""||ipt2.value === ""||ipt3.value === ""||age.value===""||isNaN(num1)||isNaN(num2)||isNaN(num3)||num1<=0||num2<=0||num3<=0){
+    if (!(gender[0].checked || gender[1].checked) || ipt1.value === "" || ipt3.value === "" || age.value === "" || isNaN(num1) || isNaN(num3) || num1 <= 0 || num3 <= 0 || (ipt1.placeholder === "feet" && (isNaN(num2) || num2 <= 0))) {
         return;
-    } 
+    }
+    
 
     let result; 
 
-    if (ipt2.style.display === "none") { 
-        result =  num3/((num1*num1)/(100*100));
+    if(ipt1.placeholder==="cm"){
+        result = num3 / ((num1 * num1) / (100 * 100));
     }
     else{
         result = (num3*703)/(((num1*12)+num2)*((num1*12)+num2));
@@ -59,49 +60,45 @@ calculate.addEventListener("click",()=>{
     re.textContent = `Result: ${result} &  Classification: ${classification}`;
 })
 
+
+/***** 2. US Units *****/
 const calculate2 = document.getElementById("US_Units")
 calculate2.addEventListener("click",()=>{
+
+    
     const ipt1 = document.getElementById("input1")
+    // const num1 = Number(ipt1.value); // feet
+
     const ipt2 = document.getElementById("input2")
+    // const num2 = Number(ipt2.value); // inches
+
     const ipt3 = document.getElementById("weight")
-    const resultDisplay = document.getElementById("result")
-    const age1 = document.getElementById("age")
-    const gender = document.querySelectorAll("input[name='gender']")
-    gender.forEach(button=>button.checked=false)
-    age1.value = ""
-    ipt1.value = ""
-    ipt2.value = ""
-    ipt3.value = ""
-    resultDisplay.textContent = ""
+    // const num3 = Number(ipt3.value); // lbs
+
+    ipt1.value = "";
+    ipt3.value = "";
+    ipt2.value="";
+
     ipt2.style.display = "inline-block";  // Show inches input when switching to US Units
     ipt1.setAttribute("placeholder", "feet");  // Set placeholder for feet
-    ipt3.setAttribute("placeholder", "lbs"); // set placeholder for lbs
+    ipt3.setAttribute("placeholder", "lbs"); 
 });
+
 
 /***** 3. Metric Units *****/
 
 const calculate3 = document.getElementById("Metric_Units")
 calculate3.addEventListener("click",()=>{
-    let ipt2 = document.getElementById("input2")
+    const ipt2 = document.getElementById("input2")
     ipt2.style.display = "none";
 
-    let ipt1 = document.getElementById("input1")
+   const ipt1 = document.getElementById("input1")
     ipt1.setAttribute("placeholder","cm")
 
-    let ipt3 = document.getElementById("weight")
+    const ipt3 = document.getElementById("weight")
     ipt3.setAttribute("placeholder","kg")
 
-    const gender = document.querySelectorAll("input[name='gender']")
-    gender.forEach(button=>button.checked=false)
-    const age1 = document.getElementById("age")
-    
-    age1.value = ""
+    ipt1.value=""
+    ipt3.value=""
 
-    const resultDisplay = document.getElementById("result")
-
-    ipt1.value = ""
-    ipt2.value = ""
-    ipt3.value = ""
-    resultDisplay.textContent = ""
-    
 });
