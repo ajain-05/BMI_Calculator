@@ -32,7 +32,7 @@ h1{
     height: 2.5vw;
     border-radius: 0.5rem;
     font-size: 1vw;
-    border: none;
+    border: 2px solid #5b86e5;
     color: #ffffff;
     cursor: pointer;
     background: linear-gradient(to right, #36d1dc, #5b86e5);
@@ -80,6 +80,7 @@ input[type="radio"]{
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-size: 1.5vw;
 }
 #calculate:hover {
     background: linear-gradient(to right, #0072ff, #00c6ff);
